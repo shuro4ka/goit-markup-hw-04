@@ -4,6 +4,7 @@
   --text-color: #757575;
   --letter-color: #ffffff;
   --background-color: #f5f4fa;
+
   --footer-color: #2f303a;
 }
 body {
@@ -135,6 +136,11 @@ img {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
 }
 .hero-title {
   font-weight: 900;
