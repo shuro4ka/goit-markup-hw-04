@@ -270,7 +270,6 @@ img {
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 10px;
-  margin-top: 30px;
 }
 .team-text {
   font-weight: normal;
@@ -278,9 +277,25 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--text-color);
+  margin-bottom: 16px;
 }
 .content {
   text-align: center;
+  padding: 30px 32px;
+}
+.media-list {
+  display: flex;
+  justify-content: center;
+}
+.media-item + .media-item {
+  margin-left: 10px;
+}
+.media-link {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: block;
 }
 
 /*-----------CLIENTS-----------*/
