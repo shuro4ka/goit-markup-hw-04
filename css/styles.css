@@ -60,6 +60,24 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.media-list {
+  display: flex;
+  justify-content: center;
+}
+.media-item + .media-item {
+  margin-left: 10px;
+}
+.media-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.media-icon {
+  fill: currentColor;
+}
 
 /*-------------------HEADER-------------------*/
 .header {
@@ -310,6 +328,7 @@ img {
   text-align: center;
   padding: 30px 32px;
 }
+/*
 .media-list {
   display: flex;
   justify-content: center;
@@ -320,11 +339,11 @@ img {
 .media-link {
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #ffffff;
   color: var(--icon-color);
 }
 .media-icon {
@@ -335,7 +354,16 @@ img {
   background-color: var(--brand-color);
   color: var(--letter-color);
 }
-
+*/
+.card-link {
+  background-color: #ffffff;
+  color: var(--icon-color);
+}
+.card-link:hover,
+.card-link:focus {
+  background-color: var(--brand-color);
+  color: var(--letter-color);
+}
 /*-----------CLIENTS-----------*/
 .clients-title {
   text-align: center;
@@ -418,11 +446,14 @@ img {
 .footer-text {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   line-height: 100%;
   letter-spacing: 0.03em;
   color: var(--letter-color);
+  margin-bottom: 30px;
 }
+
+/*
 .media-list {
   display: flex;
   justify-content: center;
@@ -433,11 +464,11 @@ img {
 .media-link {
   width: 44px;
   height: 44px;
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--letter-color);
 }
 .media-icon {
@@ -448,10 +479,24 @@ img {
   background-color: var(--brand-color);
   color: var(--letter-color);
 }
-.footer-element {
+*/
+.footer-wrap {
   display: flex;
+  justify-content: left;
+}
+.footer-left + .footer-right {
+  margin: 0 70px;
 }
 
+.footer-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--letter-color);
+}
+.footer-link:hover,
+.footer-link:focus {
+  background-color: var(--brand-color);
+  color: var(--letter-color);
+}
 /*------------FILTERS--------------*/
 
 .btn.list {
