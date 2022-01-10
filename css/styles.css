@@ -138,6 +138,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 80px;
 }
 /*-----------CONTACTS-----------*/
 .contacts {
@@ -150,6 +151,8 @@ img {
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--text-color);
+  display: flex;
+  align-items: center;
 }
 .contacts-item:not(:last-of-type) {
   margin-right: 50px;
@@ -447,10 +450,10 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  line-height: 100%;
   letter-spacing: 0.03em;
   color: var(--letter-color);
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 /*
@@ -483,6 +486,7 @@ img {
 .footer-wrap {
   display: flex;
   justify-content: left;
+  align-items: baseline;
 }
 .footer-left + .footer-right {
   margin: 0 70px;
