@@ -115,14 +115,10 @@ img {
 .mail-icon {
   fill: currentColor;
   margin-right: 10px;
-  justify-content: center;
-  align-items: center;
 }
 .tel-icon {
   fill: currentColor;
   margin-right: 10px;
-  justify-content: center;
-  align-items: center;
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -178,6 +174,8 @@ img {
   background-position: center;
   background-size: cover;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-title {
   font-weight: 900;
@@ -329,7 +327,7 @@ img {
 }
 .content {
   text-align: center;
-  padding: 30px 32px;
+  padding: 30px 0;
 }
 /*
 .media-list {
@@ -394,7 +392,6 @@ img {
   background-color: #ffffff;
   border: 1px solid currentColor;
   border-radius: 4px;
-  padding: 16px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -485,11 +482,10 @@ img {
 */
 .footer-wrap {
   display: flex;
-  justify-content: left;
   align-items: baseline;
 }
-.footer-left + .footer-right {
-  margin: 0 70px;
+.footer-right {
+  margin-left: 70px;
 }
 
 .footer-link {
@@ -530,6 +526,7 @@ img {
   /* transition: 0.3s; */
 }
 .btn-item:hover,
+.btn-item:focus,
 .btn-item:active {
   font-family: inherit;
   letter-spacing: 0.03em;
@@ -577,8 +574,11 @@ img {
   border-left: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
 }
-.gallery-item:active,
-.gallery-item:hover {
+.gallery-link {
+  display: block;
+}
+.gallery-link:focus,
+.gallery-link:hover {
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
